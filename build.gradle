@@ -1,7 +1,7 @@
 apply plugin: 'java'
 
 ext {
-	flinkVersion = '1.1.2'
+	flinkVersion = '1.4.2'
 	log4jVersion = '2.6.2'
 }
 
@@ -18,10 +18,10 @@ dependencies {
 	compile "org.apache.logging.log4j:log4j-core:$log4jVersion"
 
 	compile "org.apache.flink:flink-java:$flinkVersion"
-  	compile "org.apache.flink:flink-streaming-java_2.10:$flinkVersion"
-  	compile "org.apache.flink:flink-clients_2.10:$flinkVersion"
-  	
+  	compile "org.apache.flink:flink-streaming-java_2.11:$flinkVersion"
+  	compile "org.apache.flink:flink-clients_2.11:$flinkVersion"
+
   	compile 'com.google.guava:guava:19.0'
-  	
+
     testCompile 'junit:junit:4.12'
 }
